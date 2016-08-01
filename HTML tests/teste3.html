@@ -1,0 +1,32 @@
+<meta charset="UTF-8">
+<html>
+<title>IMC</title>
+<script>
+function pulaLinha(){
+  document.write("<br>");
+}
+
+function mostra(frase){
+  document.write(frase);
+  pulaLinha();
+}
+
+var nomeUser=prompt("Nome: ");
+var alturaUser=prompt("Altura: ");
+var pesoUser=prompt("Peso: ");
+
+var imcUser=Math.round(pesoUser/(alturaUser*alturaUser));
+mostra(nomeUser);
+mostra("Seu imc é: "+imcUser);
+
+if(imcUser < 18.5){
+  mostra("Vc está puro osso hein man... toma um Whey+ batata doce cumpadi");
+}
+if(imcUser > 35){
+  mostra("Saiu de casa e comeu pra carai hein...");
+}
+if(imcUser > 18.5 && imcUser < 35){
+  mostra("Puro musculo mano...")
+}
+</script>
+</html>

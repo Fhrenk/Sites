@@ -1,0 +1,35 @@
+<meta charset="UTF-8">
+<html>
+<h1>Alcool & Gasolina</h1><br>
+
+<script>
+var litrosDoTanque=40;
+
+var kmA=480;
+var kmG=300;
+
+var caminhoDeGasolina=(litrosDoTanque/kmG).toFixed(2);
+var caminhoDeAlcool= (litrosDoTanque/kmA).toFixed(2);
+
+var precoAlcool=2.40;
+var precoGasolina=2.90;
+
+var precoPorQuilometroA=Math.round(precoAlcool/caminhoDeAlcool);
+var precoPorQuilometroG=Math.round(precoGasolina/caminhoDeGasolina);
+
+
+document.write("Valor do álcool por litro é: "+("<br>"));
+document.write(caminhoDeAlcool+("<br>"+"<br>"));
+
+document.write("Valor da gasolina por litro é: "+("<br>"));
+document.write(caminhoDeGasolina+("<br>"+"<br>"));
+
+document.write("Preço Alcool= R$ "+precoAlcool+("<br>"));
+document.write("Quilometro por quilometro = "+precoPorQuilometroA+("<br>"+"<br>"));
+
+document.write("Preço Gasolina= R$ "+precoGasolina+("<br>"));
+document.write("Quilometro por litro = "+precoPorQuilometroG+("<br>"));
+
+</script>
+
+</html>

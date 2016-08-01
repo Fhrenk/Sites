@@ -1,0 +1,19 @@
+<meta charset="utf-8">
+<html>
+<title>Arrays</title>
+
+<input type="text" id="numero"/>
+<input type="Submit" value="Compare com o meu segredo!" id="adivinhar"/>
+<script>
+//ação pegar o elemento de id numero
+var caixaDoNumero = document.getElementById("numero");
+//açao de quando o botao for clicado dar o alerta
+var botaoClicado = function(){
+alert(caixaDoNumero.value);
+}
+//ação de clicar no botao
+var botaoAdivinhar = document.getElementById("adivinhar");
+botaoAdivinhar.onclick=botaoClicado;
+
+</script>
+</html>

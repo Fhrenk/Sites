@@ -1,0 +1,22 @@
+<meta charset=UTF-8>
+<html>
+<title>PONTOS FUTEBOL</title>
+<script>
+function pulaLinha(){
+   document.write("<br>");
+}
+function mostra(frase) {
+document.write(frase);
+pulaLinha();
+}
+
+var vitorias= prompt ("Quantos jogos foram vencidos? ");
+var empates= prompt("Quantos jogos foram empatados ?");
+var perdas= prompt("Quantos jogos foram perdidos? ");
+
+var pontos=(vitorias*3)+parseInt(empates);
+
+mostra("Seu time tem "+pontos+ " pontos!");
+
+</script>
+</html>

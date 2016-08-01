@@ -1,0 +1,20 @@
+<meta charset="utf-8">
+<html>
+<title>MEDIA DE VIDA FAMILIARES</title>
+<script>
+var totalDeFamiliares = prompt("Quantos cumpadi tem no bonde?");
+
+var i=1;
+var somaDeIdades=0;
+
+
+while(i <= totalDeFamiliares){
+  var idadeTexto = prompt("Qual a sua idade Cumpadi ?");
+  var idade = parseInt(idadeTexto);
+  somaDeIdades=somaDeIdades+idade;
+  i++;
+}
+var media=somaDeIdades/totalDeFamiliares;
+alert("A média é: "+media);
+</script>
+</html>

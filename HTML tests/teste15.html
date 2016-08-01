@@ -1,0 +1,22 @@
+<meta charset="utf-8">
+<html>
+<title>JOGO DO ADVINHA</title>
+<script>
+
+function mostra(frase){
+  document.write(frase+"<br>");
+}
+
+var numeroPensado = Math.round(Math.random() * 100);
+var chute = prompt("Já pensei. Qual você acha que é?");
+
+if(chute == numeroPensado) {
+
+alert("Uau! Você acertou, pois eu pensei no " + numeroPensado);
+}
+else {
+alert("Você errou! Eu tinha pensado no " + numeroPensado);
+}
+
+</script>
+</html>
